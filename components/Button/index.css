@@ -1,0 +1,62 @@
+button {
+  height: fit-content;
+  width: fit-content;
+  font-size: 1em;
+  font-family: NeueMontreal-Medium, sans-serif;
+  cursor: pointer;
+}
+
+button.square {
+  border-radius: 170px;
+  border: 1px solid transparent;
+}
+
+button.rounded {
+  position: relative;
+  margin: auto 5px auto auto;
+  border: 0.1px solid #0b0c0ec4;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  padding: 0;
+}
+
+button.rounded img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+button.rounded:hover,
+button.square:hover {
+  background-color: #747bff;
+}
+
+button.rounded span {
+  position: relative;
+  bottom: 2.5px;
+}
+
+button.light {
+  background-color: #f4f7fa;
+  color: #0b0c0e;
+}
+
+button.dark {
+  background-color: #0b0c0e;
+  color: #f4f7fa;
+}
+
+button.transparent {
+  background-color: transparent;
+}
+
+button.large {
+  padding: 1.5em 3em;
+}
+
+button.regular {
+  padding: 1em 2em;
+}

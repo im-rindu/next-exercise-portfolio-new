@@ -1,11 +1,13 @@
 import { Button } from "@nextui-org/button";
+import { Image } from "@nextui-org/image";
+import "./index.css";
 
 interface ButtonProps {
-  buttonName: string;
+  buttonName?: string;
   buttonType: string;
-  buttonColor: string;
-  buttonImage: string;
-  buttonSize: string;
+  buttonColor?: string;
+  buttonImage?: string;
+  buttonSize?: string;
 }
 const ButtonNew = ({
   buttonName,
@@ -13,6 +15,11 @@ const ButtonNew = ({
   buttonColor,
   buttonImage,
   buttonSize,
-}) => (
-  <Button className={`${buttonType} ${buttonColor} ${buttonSize}`}></Button>
+}: ButtonProps) => (
+  <Button className={`${buttonType} ${buttonColor} ${buttonSize}`}>
+    {buttonName ? <span>{buttonName}</span> : null}
+    {buttonImage ? <Image src={buttonImage} alt={buttonType} /> : null}
+  </Button>
 );
+
+export default ButtonNew;
