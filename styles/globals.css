@@ -10,7 +10,9 @@
   font-family: NeueMontreal-Medium;
   src: url("/fonts/NeueMontreal-Medium.otf") format("opentype");
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: NeueMontreal-Regular, sans-serif;
   font-weight: 400;
