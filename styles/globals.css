@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: NeueMontreal-Regular;
+  src: url("/fonts/NeueMontreal-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: NeueMontreal-Medium;
+  src: url("/fonts/NeueMontreal-Medium.otf") format("opentype");
+}
+
+body {
+  font-family: NeueMontreal-Regular, sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font: 500 150px NeueMontreal-Medium, sans-serif;
+  line-height: 180px;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
