@@ -14,6 +14,7 @@
 body {
   font-family: NeueMontreal-Regular, sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 h1 {

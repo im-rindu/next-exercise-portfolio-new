@@ -1,4 +1,4 @@
-import { Hero, Content } from "@/components";
+import { Hero, Content, Portfolio } from "@/components";
 import { about, work, review, portfolio } from "@/config/data";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <Hero />
       <Content contentTitle="About" content={about} />
       <Content contentTitle="Recent Work" content={work} />
+      <Portfolio content={portfolio} />
       <Content contentTitle="Testimonials" content={review} />
     </section>
   );

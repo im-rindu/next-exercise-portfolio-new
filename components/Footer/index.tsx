@@ -9,7 +9,7 @@ const Footer = () => (
       <div className="text-5xl mb-36 font-bold">
         Have something in mind?
         <div className="man-photo flex flex-row align-middle mt-3">
-          <Image src="/images/the-man-circle.png" alt="the-man" />
+          <img src="/images/the-man-circle.png" alt="the-man" />
           <span className="m-3">let’s build together.</span>
         </div>
       </div>

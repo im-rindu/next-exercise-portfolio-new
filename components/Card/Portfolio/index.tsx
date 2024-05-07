@@ -7,8 +7,8 @@ interface PortfolioProps {
 }
 
 const Portfolio = ({ item }: PortfolioProps) => (
-  <figure className="portfolio">
-    <Image src={item.image} alt="portfolio" />
+  <figure className="bg-light-gray w-fit h-fit m-0 p-12">
+    <img src={item.image} alt="portfolio" />
     {/* <Button
       buttonName="Visit the website"
       buttonType="square"

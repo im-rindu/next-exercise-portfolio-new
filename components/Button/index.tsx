@@ -18,7 +18,7 @@ const ButtonNew = ({
 }: ButtonProps) => (
   <Button className={`${buttonType} ${buttonColor} ${buttonSize}`}>
     {buttonName ? <span>{buttonName}</span> : null}
-    {buttonImage ? <Image src={buttonImage} alt={buttonType} /> : null}
+    {buttonImage ? <img src={buttonImage} alt={buttonType} /> : null}
   </Button>
 );
 
